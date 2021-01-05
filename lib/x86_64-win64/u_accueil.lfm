@@ -1,0 +1,36 @@
+object f_accueil: Tf_accueil
+  Left = 592
+  Height = 669
+  Top = 243
+  Width = 950
+  ClientHeight = 669
+  ClientWidth = 950
+  LCLVersion = '2.0.8.0'
+  object pnl_accueil: TPanel
+    Left = 0
+    Height = 669
+    Top = 0
+    Width = 950
+    Align = alClient
+    ClientHeight = 669
+    ClientWidth = 950
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 232
+      Height = 325
+      Top = 144
+      Width = 489
+      Alignment = taCenter
+      Caption = 'Bienvenue'#13#10#13#10'dans l''application de '#13#10#13#10'gestion de la Scolarité'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -48
+      Font.Name = 'Segoe UI Symbol'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+end

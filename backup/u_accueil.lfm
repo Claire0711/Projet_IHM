@@ -1,0 +1,17 @@
+object f_accueil: Tf_accueil
+  Left = 592
+  Height = 669
+  Top = 243
+  Width = 950
+  ClientHeight = 669
+  ClientWidth = 950
+  LCLVersion = '2.0.8.0'
+  object pnl_accueil: TPanel
+    Left = 0
+    Height = 669
+    Top = 0
+    Width = 950
+    Align = alClient
+    TabOrder = 0
+  end
+end

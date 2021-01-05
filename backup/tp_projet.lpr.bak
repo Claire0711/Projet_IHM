@@ -1,0 +1,27 @@
+program tp_projet;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, u_gabarit, u_select_etudiant, u_accueil, u_list_inscrit,
+  u_detail_inscription, u_modele
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+  RequireDerivedFormResource:=True;
+  //Application.Scaled:=True;
+  Application.Initialize;
+  Application.CreateForm(Tf_gabarit, f_gabarit);
+  Application.CreateForm(Tf_select_etudiant, f_select_etudiant);
+  Application.CreateForm(Tf_accueil, f_accueil);
+  Application.CreateForm(Tf_list_inscrit, f_list_inscrit);
+  Application.CreateForm(Tf_detail_inscription, f_detail_inscription);
+  Application.Run;
+end.
+
